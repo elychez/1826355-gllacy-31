@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/31/user/1826355).
-* Наставник: `Potom Viberu`.
+* Студент: [Эльчин Гасанов](https://up.htmlacademy.ru/htmlcss/31/user/1826355).
+* Наставник: [Сергей Максименко](https://htmlacademy.ru/profile/id248863).
 
 ---
 
