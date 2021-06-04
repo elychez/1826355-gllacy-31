@@ -43,7 +43,7 @@
       <li>
         <img src="img/icon_login.svg" width="20" height="19" alt="">
         <a href="blank.html">Вход</a>
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form action="https://echo.htmlacademy.ru" method="post"></form>
       </li>
 
       <li>
@@ -62,24 +62,26 @@
       </div>
     </div>
 
-<section>
-  <h2>breadcrumb</h2>
-  <ul>
-    <li>
-      <a href="index.html">Главная</a>
-    </li>
-    <li>
-      <a href="catalog.html">Каталог</a>
-    </li>
-    <li>
-      <a>Сливочное</a>
-    </li>
-  </ul>
-</section>
+
 
 </header>
 
 <main>
+
+  <section>
+    <h2>breadcrumb</h2>
+    <ul>
+      <li>
+        <a href="index.html">Главная</a>
+      </li>
+      <li>
+        <a href="catalog.html">Каталог</a>
+      </li>
+      <li>
+        <a>Сливочное</a>
+      </li>
+    </ul>
+  </section>
 
   <h1>Сливочное мороженое</h1>
 
@@ -105,49 +107,51 @@
           <p>Жирность:</p>
             <ul>
               <li>
-            <input type="radio" id="r1" name="richness" value="0">
-                <label for="r1">0%</label>
+            <input type="radio" id="richness-0" name="richness" value="0">
+                <label for="richness-0">0%</label>
               </li>
               <li>
-                <input type="radio" id="r2" name="richness" value="10" checked>
-                <label for="r2">до 10%</label>
+                <input type="radio" id="richness-under-10" name="richness" value="10" checked>
+                <label for="richness-under-10">до 10%</label>
               </li>
               <li>
-                <input type="radio" id="r3" name="richness" value="30">
-                <label for="r3">до 30%</label>
+                <input type="radio" id="richness-under-30" name="richness" value="30">
+                <label for="richness-under-30">до 30%</label>
               </li>
               <li>
-                <input type="radio" id="r4" name="richness" value="30">
-                <label for="r4">выше 30%</label>
+                <input type="radio" id="richness-over-30" name="richness" value="30">
+                <label for="richness-over-30">выше 30%</label>
               </li>
             </ul>
         </div>
         </div>
 
         <div>
+          <div>
           <p>Наполнители:</p>
           <ul>
             <li>
-              <input type="checkbox" id="c1" name="fill" value="chocolate" checked>
-              <label for="c1">шоколад</label>
+              <input type="checkbox" id="chocolate" name="fill" value="chocolate" checked>
+              <label for="chocolate">шоколад</label>
             </li>
             <li>
-              <input type="checkbox" id="c2" name="fill" value="sugar" checked>
-              <label for="c2">сахарные присыпки</label>
+              <input type="checkbox" id="sugar" name="fill" value="sugar" checked>
+              <label for="sugar">сахарные присыпки</label>
             </li>
             <li>
-              <input type="checkbox" id="c3" name="fill" value="fruits">
-              <label for="c3">фрукты</label>
+              <input type="checkbox" id="fruits" name="fill" value="fruits">
+              <label for="fruits">фрукты</label>
             </li>
             <li>
-              <input type="checkbox" id="c4" name="fill" value="syrups">
-              <label for="r4">сиропы</label>
+              <input type="checkbox" id="syrups" name="fill" value="syrups">
+              <label for="syrups">сиропы</label>
             </li>
             <li>
-              <input type="checkbox" id="c5" name="fill" value="jams">
-              <label for="c4">джемы</label>
+              <input type="checkbox" id="jams" name="fill" value="jams">
+              <label for="jams">джемы</label>
             </li>
           </ul>
+          </div>
           <button type="submit">Применить</button>
         </div>
       </form>
