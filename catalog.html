@@ -43,15 +43,74 @@
       <li>
         <img src="img/icon_login.svg" width="20" height="19" alt="">
         <a href="blank.html">Вход</a>
-        <form action="https://echo.htmlacademy.ru" method="post"></form>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <p>
+          <label for="login-login">Логин</label>
+          <input id="login-login" type="email" name="login" placeholder="email@example.com">
+            </p>
+            <p>
+          <label for="login-password">Пароль</label>
+          <input id="login-password" type="password" name="password" placeholder="••••••••">
+            </p>
+        <div>
+          <button type="submit">Войти</button>
+          <ul>
+            <li>
+              <a href="#">Забыли пароль?</a>
+            </li>
+            <li>
+              <a href="#">Новая регистрация</a>
+            </li>
+          </ul>
+        </div>
+          </form>
       </li>
 
       <li>
-        <img src="img/icon_login.svg" width="21" height="20" alt="">
+        <img src="img/icon_cart.svg" width="21" height="20" alt="">
         <a href="blank.html">2 товара</a>
+        <div>
+          <table class="cart-table">
+            <caption class="cart-totalprice">Итого: 750 руб.</caption>
+            <tbody>
+            <tr class="table-tr">
+              <td class="td-style">
+                <button type="button" class="delete-button">
+                  <span class="visually-hidden">Удалить</span>
+                </button>
+              </td>
+              <td class="tb-img td-style">
+                <img src="img/orange_icecream.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+              </td>
+              <td class="tb-product td-style">Пломбир с апельсиновым джемом</td>
+              <td class="tb-kg td-style">1,5 кг х
+                <span>200 руб.</span>
+              </td>
+              <td class="tb-price td-style">300 руб.</td>
+            </tr>
+            <tr class="table-tr">
+              <td>
+                <button type="button" class="delete-button">
+                  <span class="visually-hidden">Удалить</span>
+                </button>
+              </td>
+              <td class="tb-img td-style">
+                <img src="img/strawberry_icecream.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+              </td>
+              <td class="tb-product td-style">Клубничный пломбир с присыпкой из белого шоколада</td>
+              <td class="tb-kg td-style">1,5 кг х
+                <span>300 руб.</span>
+              </td>
+              <td class="tb-price td-style">450 руб.</td>
+            </tr>
+            </tbody>
+          </table>
+          <a class="buttons cart-button" href="#">Оформить заказ</a>
+        </div>
       </li>
 
     </ul>
+  </nav>
 
     <div>
       <p>
