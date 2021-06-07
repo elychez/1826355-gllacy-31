@@ -28,6 +28,7 @@
   --basic-white: #FFFFFF;
   --basic-grey: #5A5A5A;
   --basic-light: #999999;
+  --basic-lighter: #F8F7F4;
   --button-color: #f26843;
   --button-color-2: #E74A35;
 }
@@ -224,6 +225,44 @@ body {
   font-weight: bold;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.vaffel-advantage {
+  background-image: url("../img/vaffel_background.jpg");
+  background-size: cover;
+  border-radius: 16px;
+}
+
+.email {
+  background-image: url("../img/email_background.jpg");
+  width: 560px;
+  height: 220px;
+  border-radius: 16px;
+}
+
+.email-wrap {
+  background-color: var(--basic-lighter);
+  width: 548px;
+  height: 210px;
+  border-radius: 16px;
+}
+
+.contacts {
+  background-color: var(--basic-white);
+  border-radius: 16px;
+  width: 303px;
+  height: 306px;
+}
+
+.hit-list-item img {
+  background-color: var(--basic-green);
+}
 
 
 
