@@ -46,16 +46,34 @@ body {
   background: var(--basic-green);
 }
 
-li {
+.site-navigation a {
+  font-weight: bold;
+  line-height: 18px;
+  color: var(--basic-white);
+}
+
+.site-navigation li {
   list-style: none;
 }
 
-a {
+.user-navigation li {
+  list-style: none;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.menu-list-item a {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--basic-black);
   text-decoration: none;
 }
 
-.site-navigation a {
-  font-weight: bold;
+.new {
+  font-size: 14px;
   line-height: 18px;
 }
 
@@ -63,18 +81,32 @@ a {
   font-weight: 500;
   line-height: 16px;
   font-size: 14px;
+  color: var(--basic-white);
+  text-decoration: none;
+}
+
+.site-navigation .active-item-catalog {
+  line-height: 18px;
+  font-weight: bold;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  border-radius: 26px;
 }
 
 .work-time-text {
   font-size: 14px;
   line-height: 16px;
   font-weight: bold;
+  color: var(--basic-white);
+  text-decoration: none;
 }
 
 .telephone-number-link {
   font-size: 22px;
   line-height: 24px;
   font-weight: bold;
+  text-decoration: none;
+  color: var(--basic-white);
 }
 
 .main-title-text {
@@ -153,7 +185,8 @@ a {
 }
 
 .advantage-item {
-  color: var(--basic-black)
+  color: var(--basic-black);
+  list-style: none;
 }
 
 .advantages-description {
@@ -224,7 +257,6 @@ a {
   font-size: 14px;
   line-height: 20px;
   color: var(--basic-black);
-  text-decoration: underline;
 }
 
 .feedback {
@@ -291,14 +323,29 @@ a {
   background-color: var(--basic-green);
 }
 
+.item-preview {
+  list-style: none;
+}
+
 .made-in {
   color: var(--basic-white)
+}
+
+.html-link {
+  text-decoration: none;
 }
 
 .html {
   text-decoration: underline;
 }
 
+.social-list li {
+  list-style: none;
+}
+
+.about-us-list li {
+  list-style: none;
+}
 
 
 
