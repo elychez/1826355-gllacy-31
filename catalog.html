@@ -20,8 +20,8 @@
     <a class="main-header-logo">
       <img src="img/logo.svg" width="154" height="64" alt="Glacy Shop">
     </a>
-    <ul class="site-navigation-list">
-      <li class="site-navigation">
+    <ul class="site-navigation">
+      <li class="site-navigation-list">
         <a class="catalog" href="catalog.html">Каталог</a>
       </li>
 
@@ -39,7 +39,6 @@
         <a class="search-icon">
         <img src="img/icon_search.svg" width="16" height="16" alt="">
         </a>
-        <a href="blank.html">Поиск</a>
         <form action="https://echo.htmlacademy.ru" method="get">
           <input class="search-input" type="search" placeholder="Что ищем?">
         </form>
@@ -74,8 +73,11 @@
       </li>
 
       <li>
-        <img src="img/icon_cart.svg" width="21" height="20" alt="">
-        <a class="cart-items" href="blank.html">2 товара</a>
+
+        <a class="cart-items" href="blank.html">
+          <img src="img/icon_cart.svg" width="21" height="20" alt="">
+          <span>2 товара</span>
+        </a>
         <div>
           <table class="cart-table">
             <caption class="cart-totalprice">Итого: 750 руб.</caption>
@@ -91,7 +93,7 @@
               </td>
               <td class="tb-product td-style">Пломбир с апельсиновым джемом</td>
               <td class="tb-kg td-style">1,5 кг х
-                <span>200 руб.</span>
+                <span class="cart-item-price">200 руб.</span>
               </td>
               <td class="tb-price td-style">300 руб.</td>
             </tr>
@@ -106,7 +108,7 @@
               </td>
               <td class="tb-product td-style">Клубничный пломбир с присыпкой из белого шоколада</td>
               <td class="tb-kg td-style">1,5 кг х
-                <span>300 руб.</span>
+                <span class="cart-item-price">300 руб.</span>
               </td>
               <td class="tb-price td-style">450 руб.</td>
             </tr>
@@ -137,13 +139,13 @@
   <section class="breadcrumb">
     <h2 class="visually-hidden">breadcrumb</h2>
     <ul class="breadcrumb-items">
-      <li class="breadcrumb-item-list<">
-        <a href="index.html">Главная</a>
+      <li class="breadcrumb-item-list">
+        <a class="underline" href="index.html">Главная</a>
       </li>
-      <li>
-        <a href="catalog.html">Каталог</a>
+      <li class="breadcrumb-item-list">
+        <a class="underline" href="catalog.html">Каталог</a>
       </li>
-      <li>
+      <li class="breadcrumb-item-list">
         <a>Сливочное</a>
       </li>
     </ul>
@@ -152,7 +154,7 @@
   <h1 class="icecream-main-title">Сливочное мороженое</h1>
 
   <section class="sorting">
-    <h2 class="sorting-title">сортировка</h2>
+    <h2 class="visually-hidden">сортировка</h2>
     <div class="main-sorting-container">
       <form action="https://echo.htmlacademy.ru" method="get">
         <div class="sorting-container">
@@ -365,8 +367,10 @@
     <div class="logo-link">
       <a class="html-link" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo_htmlacademy.svg" width="108" height="31" alt="Лого htmlacademy">
         <span class="made-in">
-        Сделано в HTML Academy © 2021
-        </span>
+        Сделано в
+          <span class="html">
+            HTML Academy
+          </span>© 2021
       </a>
     </div>
   </div>

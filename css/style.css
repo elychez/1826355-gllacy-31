@@ -32,6 +32,7 @@
   --button-color: #f26843;
   --button-color-2: #E74A35;
   --button-shadow: rgba(172, 16, 0, 0.64);
+  --catalog-background: #D07058;
 }
 
 html {
@@ -91,6 +92,7 @@ body {
   color: var(--basic-black);
   background-color: var(--basic-white);
   border-radius: 26px;
+  text-decoration: none;
 }
 
 .work-time-text {
@@ -176,6 +178,7 @@ body {
   font-size: 16px;
   line-height: 22px;
   text-align: center;
+  text-decoration: underline;
 }
 
 .fast-view {
@@ -346,6 +349,90 @@ body {
 .about-us-list li {
   list-style: none;
 }
+
+.catalog {
+  font-weight: bold;
+  line-height: 18px;
+  background-color: var(--catalog-background);
+  border-radius: 26px;
+  text-decoration: none;
+}
+
+.cart-items {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  border-radius: 20px;
+}
+
+.cart-table {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: var(--basic-black);
+}
+
+.cart-totalprice {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 16px;
+}
+
+.cart-item-price {
+  opacity: 50%;
+}
+
+.cart-button {
+  text-decoration: none;
+}
+
+.breadcrumb-item-list a {
+  text-decoration: none;
+  color: var(--basic-white);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.breadcrumb-item-list {
+  list-style: none;
+}
+
+.breadcrumb-item-list .underline {
+  text-decoration: underline;
+}
+
+.icecream-main-title {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.sort-label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.pages a {
+  text-decoration: none;
+  color: var(--basic-white);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.pages li {
+  list-style: none;
+}
+
+.active-list {
+  color: var(--basic-black);
+}
+
 
 
 
