@@ -80,7 +80,6 @@
         </a>
         <div>
           <table class="cart-table">
-            <caption class="cart-totalprice">Итого: 750 руб.</caption>
             <tbody>
             <tr class="table-tr">
               <td class="td-style">
@@ -114,7 +113,10 @@
             </tr>
             </tbody>
           </table>
+          <div>
+            <h3 class="total-cart-price">Итого: 750 руб.</h3>
           <a class="buttons cart-button" href="#">Оформить заказ</a>
+          </div>
         </div>
       </li>
 
@@ -159,8 +161,8 @@
       <form action="https://echo.htmlacademy.ru" method="get">
         <div class="sorting-container">
           <div class="select-wrapper">
-          <label class="sort-label" for="sorting">Сортировка:</label>
-          <select class="sort-by" name="sorting" id="sorting">
+          <label class="sort-label sort-title" for="sorting">Сортировка:</label>
+          <select class="sort-by filter-background" name="sorting" id="sorting">
             <option value="popularity">по популярности</option>
             <option value="cheap-first">сначала недорогие</option>
             <option value="expensive-first">сначала дорогие</option>
@@ -168,12 +170,14 @@
           </select>
           </div>
           <div class="sort-by-price">
-          <label class="price-range" for="price-range">Цена: 100 ₽ – 500 ₽</label>
+          <label class="price-range sort-title" for="price-range">Цена: 100 ₽ – 500 ₽</label>
+          <div class="filter-background">
           <input type="range" id="price-range" name="price-range">
           </div>
+          </div>
           <div class="sort-by-richness">
-          <p class="richness-title">Жирность:</p>
-            <ul class="filter-list radio-buttons">
+          <p class="richness-title sort-title">Жирность:</p>
+            <ul class="filter-list filter-background radio-buttons">
               <li>
             <input type="radio" id="richness-0" name="richness" value="0">
                 <label for="richness-0">0%</label>
@@ -196,8 +200,8 @@
 
         <div class="fill-container">
           <div class="fill-wrapper">
-          <p class="fill-title">Наполнители:</p>
-          <ul class="filter-list filter-fill">
+          <p class="fill-title sort-title">Наполнители:</p>
+          <ul class="filter-list filter-background filter-fill">
             <li>
               <input type="checkbox" id="chocolate" name="fill" value="chocolate" checked>
               <label for="chocolate">шоколад</label>
@@ -220,7 +224,7 @@
             </li>
           </ul>
           </div>
-          <button class="buttons submit-sort-button" type="submit">Применить</button>
+          <button class="submit-sort-button filter-background" type="submit">Применить</button>
         </div>
       </form>
     </div>
@@ -371,6 +375,7 @@
           <span class="html">
             HTML Academy
           </span>© 2021
+        </span>
       </a>
     </div>
   </div>
