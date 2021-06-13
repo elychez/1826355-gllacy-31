@@ -479,6 +479,60 @@ body {
   border-radius: 20px;
 }
 
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+
+}
+
+.main-navigation {
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  margin: 9px 27px 0 27px;
+}
+
+.hot-offers {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  grid-column-gap: 26px;
+}
+
+.container {
+  margin: 0 27px;
+}
+
+.item-preview-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 26px;
+}
+
+.advantages-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.main-advantages {
+  padding: 24px 23px 36px 20px;
+  margin: 40px 0;
+}
+
+.blog-email {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  grid-column-gap: 26px;
+}
+
+.page-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr min-content;
+}
+
+
 
 
 
