@@ -61,6 +61,7 @@ body {
 
 .user-navigation li {
   list-style: none;
+  margin-right: 10px;
 }
 
 .underline {
@@ -103,6 +104,7 @@ body {
   font-weight: bold;
   color: var(--basic-white);
   text-decoration: none;
+  margin-bottom: 8px;
 }
 
 .telephone-number-link {
@@ -154,13 +156,13 @@ body {
 .offer-raspberry {
   background-image: url("../img/raspberry_background.jpg");
   width: 560px;
-  height: 229px;
+  min-height: 229px;
 }
 
 .offer-chocolate {
   background-image: url("../img/chocolate_background.jpg");
   width: 560px;
-  height: 229px;
+  min-height: 229px;
 }
 
 .icecream-price {
@@ -192,6 +194,7 @@ body {
 .advantage-item {
   color: var(--basic-black);
   list-style: none;
+  width: 49%;
 }
 
 .advantages-description {
@@ -199,6 +202,13 @@ body {
   font-size: 24px;
   line-height: 30px;
   color: var(--basic-black)
+}
+
+.main-advantages-wrapper {
+  min-width: 900px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 27px;
 }
 
 .blog-title {
@@ -217,8 +227,9 @@ body {
 .blog-image {
   background-image: url("../img/strawberry_background.jpg");
   width: 560px;
-  height: 220px;
+  min-height: 220px;
   border-radius: 16px;
+  background-size: cover;
 }
 
 .email-text {
@@ -306,7 +317,7 @@ body {
 .email {
   background-image: url("../img/email_background.jpg");
   width: 560px;
-  height: 220px;
+  min-height: 220px;
   border-radius: 16px;
 }
 
@@ -330,6 +341,9 @@ body {
 
 .item-preview {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .made-in {
@@ -489,13 +503,65 @@ body {
 }
 
 .main-navigation {
-  display: grid;
-  grid-template-columns: min-content 1fr min-content;
-  margin: 9px 27px 0 27px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-navigation-wrapper {
+  display: flex;
+}
+
+.site-navigation{
+  display: flex;
+}
+
+.site-navigation-list:not(:nth-child(1)) {
+  margin-left: 32px;
+}
+
+.user-navigation {
+  display: flex;
+}
+
+.work-time-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 27px;
+}
+
+.main-title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.icecream-image {
+  align-self: center;
+}
+
+.title-slides {
+  text-align: center;
+}
+
+.slide-button {
+  width: 360px;
+}
+
+.menu-list {
+  display: none;
+}
+
+.login-form {
+  display: none;
+}
+
+.search-input {
+  display: none;
 }
 
 .hot-offers {
   display: grid;
+  justify-content: center;
   grid-template-columns: min-content min-content;
   grid-column-gap: 26px;
 }
@@ -506,31 +572,37 @@ body {
 
 .item-preview-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  grid-template-columns: min-content min-content min-content min-content;
   grid-column-gap: 26px;
+  text-align: center;
 }
 
 .advantages-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main-advantages {
   padding: 24px 23px 36px 20px;
-  margin: 40px 0;
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .blog-email {
   display: grid;
+  justify-content: center;
   grid-template-columns: min-content min-content;
   grid-column-gap: 26px;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .page-footer {
   display: grid;
   grid-template-columns: 1fr 1fr min-content;
 }
+
 
 
 

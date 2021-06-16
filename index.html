@@ -16,7 +16,9 @@
 <body class="page-body">
 
 <header class="main-header">
+  <div class="header-container">
   <nav class="main-navigation">
+    <div class="main-navigation-wrapper">
     <a class="main-header-logo">
       <img src="img/logo.svg" width="154" height="64" alt="логотип Glacy Shop">
     </a>
@@ -44,10 +46,11 @@
       <li class="site-navigation-list"><a class="underline" href="blank.html">Доставка и оплата</a></li>
       <li class="site-navigation-list"><a class="underline" href="blank.html">О компании</a></li>
     </ul>
+    </div>
     <ul class="user-navigation">
       <li class="search">
         <a class="search-icon">
-        <img src="img/icon_search.svg" width="16" height="16" alt="">
+        <img class="icon" src="img/icon_search.svg" width="16" height="16" alt="">
         </a>
         <form action="https://echo.htmlacademy.ru" method="get">
           <input class="search-input" type="search" placeholder="Что ищем?">
@@ -58,7 +61,7 @@
         <img src="img/icon_login.svg" width="20" height="19" alt="">
         </a>
         <a class="login-link" href="blank.html">Вход</a>
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="username">
             <label for="login-login">Логин</label>
             <input id="login-login" type="email" name="login" placeholder="email@example.com">
@@ -88,6 +91,7 @@
     </ul>
 
   </nav>
+    <div class="work-time-wrapper">
   <div class="work-time">
   <p class="work-time-text">
     с 10 до 20, ежедневно
@@ -96,6 +100,8 @@
     <a class="telephone-number-link" href="tel:88124502525">8 812 450-25-25</a>
   </div>
   </div>
+  </div>
+</div>
 </header>
 
 <main class="container">
@@ -115,9 +121,9 @@
       <img src="img/icecream3.png" width="639" height="582" alt="Мороженое пломбир с помадкой и клубничный щербет">
       <button class="give-both buttons">Давайте оба!</button>
     </div>
-    <button type="button">Слайд 1</button>
-    <button type="button">Слайд 2</button>
-    <button type="button">Слайд 3</button>
+    <button class="slide-button" type="button">Слайд 1</button>
+    <button class="slide-button" type="button">Слайд 2</button>
+    <button class="slide-button" type="button">Слайд 3</button>
   </section>
   <section class="hot-offers">
     <h2 class="visually-hidden">Особые предложения</h2>
@@ -136,25 +142,25 @@
     <h2 class="visually-hidden">Хиты</h2>
   <ul class="item-preview-list">
     <li class="item-preview">
-      <img src="img/orange_icecream.png" width="267" height="267" alt="Сливочное мороженое с апельсиноым джемом">
+      <img class="icecream-image" src="img/orange_icecream.png" width="267" height="267" alt="Сливочное мороженое с апельсиноым джемом">
       <span class="icecream-price">310 ₽<sub class="weight">/кг</sub></span>
       <p class="icecream-description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
       <button class="fast-view buttons" type="button">Быстрый просмотр</button>
     </li>
     <li class="item-preview">
-      <img src="img/chocolate_icecream.png" width="267" height="267" alt="Сливочно-кофейное мороженое">
+      <img class="icecream-image" src="img/chocolate_icecream.png" width="267" height="267" alt="Сливочно-кофейное мороженое">
       <span class="icecream-price">380 ₽<sub class="weight">/кг</sub></span>
       <p class="icecream-description">Сливочно-кофейное с кусочками шоколада</p>
       <button class="fast-view buttons" type="button">Быстрый просмотр</button>
     </li>
     <li class="item-preview">
-      <img src="img/strawberry_icecream.png" width="267" height="267" alt="Сливочно клубничное мороженое">
+      <img class="icecream-image" src="img/strawberry_icecream.png" width="267" height="267" alt="Сливочно клубничное мороженое">
       <span class="icecream-price">355 ₽<sub class="weight">/кг</sub></span>
       <p class="icecream-description">Сливочно-клубничное с присыпкой из белого шоколада</p>
       <button class="fast-view buttons" type="button">Быстрый просмотр</button>
     </li>
     <li class="item-preview">
-      <img src="img/creamy_icecream.png" width="267" height="267" alt="Мороженое сливочное крем-брюле">
+      <img class="icecream-image" src="img/creamy_icecream.png" width="267" height="267" alt="Мороженое сливочное крем-брюле">
       <span class="icecream-price">415 ₽<sub class="weight">/кг</sub></span>
       <p class="icecream-description">Сливочное крем-брюле с карамельной подливкой</p>
       <button class="fast-view buttons" type="button">Быстрый просмотр</button>
@@ -163,6 +169,7 @@
   </section>
 
   <section class="main-advantages vaffel-advantage">
+    <div class="main-advantages-wrapper">
     <h2 class="advantages-description">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
     <ul class="advantages-list">
       <li class="advantage-item">
@@ -182,6 +189,7 @@
         <p class="advantage-item-text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
       </li>
     </ul>
+    </div>
   </section>
 
 <div class="blog-email">
