@@ -15,9 +15,10 @@
 <body>
 
 <header class="main-header">
-
-  <nav class="main-navigation">
-    <a class="main-header-logo">
+  <div class="header-container">
+    <nav class="main-navigation">
+      <div class="main-navigation-wrapper">
+        <a class="main-header-logo">
       <img src="img/logo.svg" width="154" height="64" alt="Glacy Shop">
     </a>
     <ul class="site-navigation">
@@ -33,7 +34,7 @@
         <a href="blank.html">О компании</a>
       </li>
     </ul>
-
+      </div>
     <ul class="user-navigation">
       <li class="search">
         <a class="search-icon">
@@ -49,7 +50,7 @@
         <img src="img/icon_login.svg" width="20" height="19" alt="">
         </a>
         <a class="login-link" href="blank.html">Вход</a>
-          <form action="https://echo.htmlacademy.ru" method="post">
+          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
             <p class="username">
           <label for="login-login">Логин</label>
           <input id="login-login" type="email" name="login" placeholder="email@example.com">
@@ -78,7 +79,7 @@
           <img src="img/icon_cart.svg" width="21" height="20" alt="">
           <span>2 товара</span>
         </a>
-        <div>
+        <div class="cart-table-wrapper">
           <table class="cart-table">
             <tbody>
             <tr class="table-tr">
@@ -122,7 +123,7 @@
 
     </ul>
   </nav>
-
+<div class="work-time-wrapper">
     <div class="work-time">
       <p class="work-time-text">
         с 10 до 20, ежедневно
@@ -131,9 +132,8 @@
         <a class="telephone-number-link" href="tel:88124502525">8 812 450-25-25</a>
       </div>
     </div>
-
-
-
+</div>
+  </div>
 </header>
 
 <main class="container">
@@ -160,23 +160,25 @@
     <div class="main-sorting-container">
       <form action="https://echo.htmlacademy.ru" method="get">
         <div class="sorting-container">
-          <div class="select-wrapper">
+          <div class="select-wrapper sort">
           <label class="sort-label sort-title" for="sorting">Сортировка:</label>
+            <div>
           <select class="sort-by filter-background" name="sorting" id="sorting">
             <option value="popularity">по популярности</option>
             <option value="cheap-first">сначала недорогие</option>
             <option value="expensive-first">сначала дорогие</option>
             <option value="fat">по жирности</option>
           </select>
+            </div>
           </div>
-          <div class="sort-by-price">
+          <div class="sort-by-price sort">
           <label class="price-range sort-title" for="price-range">Цена: 100 ₽ – 500 ₽</label>
           <div class="filter-background">
           <input type="range" id="price-range" name="price-range">
           </div>
           </div>
-          <div class="sort-by-richness">
-          <p class="richness-title sort-title">Жирность:</p>
+          <div class="sort-by-richness sort">
+          <span class="richness-title sort-title">Жирность:</span>
             <ul class="filter-list filter-background radio-buttons">
               <li>
             <input type="radio" id="richness-0" name="richness" value="0">
@@ -199,8 +201,8 @@
         </div>
 
         <div class="fill-container">
-          <div class="fill-wrapper">
           <p class="fill-title sort-title">Наполнители:</p>
+          <div class="fill-wrapper">
           <ul class="filter-list filter-background filter-fill">
             <li>
               <input type="checkbox" id="chocolate" name="fill" value="chocolate" checked>
@@ -223,8 +225,8 @@
               <label for="jams">джемы</label>
             </li>
           </ul>
+            <button class="submit-sort-button filter-background" type="submit">Применить</button>
           </div>
-          <button class="submit-sort-button filter-background" type="submit">Применить</button>
         </div>
       </form>
     </div>
