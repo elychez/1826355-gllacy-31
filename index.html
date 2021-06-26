@@ -107,7 +107,6 @@
 <main class="container">
   <div class="site-wrapper site-wrapper-1">
     <div class="slider-container">
-      <header class="main-header"></header>
       <section class="slider">
         <ul class="slider-list">
           <li class="slider-item slide">
@@ -225,15 +224,17 @@
     <h2 class="visually-hidden">Подписка</h2>
     <p class="email-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе<br> всего самого вкусного, что у нас происходит. Обещаем не спамить<br> и не слать всякой ненужной ерунды. Честно =)</p>
     <form action="https://echo.htmlacademy.ru" method="post">
-        <label for="email">Email</label>
+        <label class="visually-hidden" for="email">Email</label>
+      <div class="email-submit">
         <input class="email-input" type="email" id="email" name="email" placeholder="email@example.com">
         <button class="email-submit-button buttons" type="submit">Отправить</button></form>
+    </div>
     </div>
   </article>
 </div>
   <section class="about">
     <h2 class="visually-hidden">Контакты</h2>
-    <img src="img/map.jpg" alt="Карта" width="1200" height="430">
+    <img class="about-map" src="img/map.jpg" alt="Карта" width="1200" height="430">
     <div class="contacts">
      <h3 class="address-header">Адрес главного офиса и офлайн-магазина:</h3>
       <b class="address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</b>

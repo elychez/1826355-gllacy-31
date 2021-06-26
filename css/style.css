@@ -234,7 +234,9 @@ body {
 
 .blog-title {
   font-weight: 500;
-  color: var(--basic-black)
+  color: var(--basic-black);
+  padding: 0;
+  margin: 0;
 }
 
 .blog-text {
@@ -242,7 +244,9 @@ body {
   font-size: 24px;
   line-height: 30px;
   text-decoration: underline;
-  color: var(--basic-black)
+  color: var(--basic-black);
+  margin: 0;
+  padding: 0;
 }
 
 .blog-image {
@@ -254,12 +258,36 @@ body {
 }
 
 .email-text {
-  color: var(--basic-grey)
+  color: var(--basic-grey);
+  padding: 0;
+  margin: 0;
 }
 
 .email-input {
-  color: var(--basic-light);
   background-color: var(--basic-white);
+  height: 44px;
+  width: 99%;
+  border-radius: 6px;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  margin-right: 10px;
+  padding-left: 14px;
+  transition: all 0.5s ease;
+  font-weight: bold;
+  color: var(--basic-black);
+}
+
+.email-input::placeholder {
+  color: #999999;
+  font-weight: normal;
+}
+
+.email-input:hover {
+  border: 2px solid rgba(178, 178, 178, 0.52);
+}
+
+.email-input:focus-visible, .email-input:focus, .email-input:active {
+  border: 2px solid rgba(46, 136, 228, 0.52);
+  outline: none;
 }
 
 .address-header {
@@ -299,6 +327,7 @@ body {
 .feedback {
   font-size: 18px;
   line-height: 24px;
+  margin-top: 30px;
 }
 
 .about-us-list {
@@ -335,23 +364,42 @@ body {
 }
 
 .vaffel-advantage {
-  background-image: url("../img/vaffel_background.jpg");
+  background-image: url("../img/vaffel_background.png");
   background-size: cover;
   border-radius: 16px;
 }
 
 .email {
-  background-image: url("../img/email_background.jpg");
+  background-image: url("../img/email_background.png");
+  background-size: cover;
   width: 560px;
-  min-height: 220px;
+  padding: 5px 0;
+  background-color: var(--basic-lighter);
   border-radius: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .email-wrap {
+  position: relative;
   background-color: var(--basic-lighter);
-  width: 548px;
-  height: 210px;
+  margin: 0;
+  padding: 28px 20px 30px 20px;
+  line-height: 22px;
   border-radius: 16px;
+}
+
+.email-submit {
+  display: flex;
+  align-items: center;
+  margin-top: 47px;
+}
+
+.email-submit-button {
+  padding: 10px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .contacts {
@@ -359,6 +407,10 @@ body {
   border-radius: 16px;
   width: 303px;
   height: 306px;
+  position: absolute;
+  right: 21%;
+  top: 13%;
+  padding: 20px;
 }
 
 .item-preview img {
@@ -595,10 +647,6 @@ body {
   grid-column-gap: 26px;
 }
 
-.container {
-  margin: 0 27px;
-}
-
 .item-preview-list {
   display: grid;
   justify-content: center;
@@ -619,10 +667,9 @@ body {
 }
 
 .blog-email {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: min-content min-content;
-  grid-column-gap: 26px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 40px;
   margin-top: 40px;
 }
@@ -727,7 +774,7 @@ body {
   min-width: 940px;
   background-repeat: no-repeat;
   background-position: top center;
-  margin-bottom: 42px;
+  padding-bottom: 42px;
 }
 
 .site-wrapper-1 {
@@ -743,9 +790,10 @@ body {
 }
 
 .container {
-  width: 900px;
   margin: 0 auto;
   padding: 0 20px;
+  width: 1200px;
+  position: relative;
 }
 
 .slider {
@@ -800,4 +848,18 @@ body {
 
 .slider-controls .current {
   background-color: #ffffff;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.blog {
+  padding: 20px;
+}
+
+.footer-container {
+  margin-top: 18px;
 }
