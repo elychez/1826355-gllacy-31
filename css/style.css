@@ -114,12 +114,32 @@ body {
 }
 
 .buttons {
-  font-weight: bold;
-  background: linear-gradient(180deg, var(--button-color) 0%, var(--button-color-2) 100%);
-  color: var(--basic-white);
-  box-shadow: 0px 2px 2px var(--button-shadow);
-  border-radius: 70px;
+  display: inline-block;
+  padding: 12px 44px;
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 41px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: top;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843, #e74a35);
+  border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   border: none;
+  cursor: pointer;
+}
+
+.buttons:hover {
+  background: linear-gradient(to bottom, #f58669, #ec6f5e);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.buttons:active {
+  background: linear-gradient(to bottom, #d84732, #e1613e);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .give-both {
@@ -701,4 +721,83 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   margin-right: 27px;
+}
+
+.site-wrapper {
+  min-width: 940px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  margin-bottom: 42px;
+}
+
+.site-wrapper-1 {
+  background-image: url("../img/icecream.png");
+}
+
+.site-wrapper-2 {
+  background-image: url("../img/icecream2.png");
+}
+
+.site-wrapper-3 {
+  background-image: url("../img/icecream3.png");
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.slider {
+  position: relative;
+  padding-top: 321px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  display: none;
+}
+
+.slide-current {
+  display: block;
+}
+
+.slide-title {
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 27px;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 800;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 63px;
+  left: 0;
+  z-index: 20;
+  display: flex;
+  width: 67px;
+  justify-content: space-between;
+}
+
+.slider-controls button {
+  padding: 0;
+  width: 17px;
+  height: 17px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls .current {
+  background-color: #ffffff;
 }
