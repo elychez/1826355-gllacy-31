@@ -89,15 +89,6 @@ body {
   text-decoration: none;
 }
 
-.site-navigation .active-item-catalog {
-  line-height: 18px;
-  font-weight: bold;
-  color: var(--basic-black);
-  background-color: var(--basic-white);
-  border-radius: 26px;
-  text-decoration: none;
-}
-
 .work-time-text {
   font-size: 14px;
   line-height: 16px;
@@ -128,6 +119,7 @@ body {
   color: var(--basic-white);
   box-shadow: 0px 2px 2px var(--button-shadow);
   border-radius: 70px;
+  border: none;
 }
 
 .give-both {
@@ -139,28 +131,37 @@ body {
   font-weight: bold;
   font-size: 35px;
   line-height: 41px;
+  padding-left: 16px;
+  margin-bottom: 0;
+  margin-top: 16px;
 }
 
 .hot-offer-description {
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
+  padding-left: 16px;
+  padding-right: 30px;
+  margin-bottom: 42px;
 }
 
 .want-button {
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
+  padding: 10px;
+  margin-right: 22px;
+  margin-bottom: 22px;
 }
 
 .offer-raspberry {
-  background-image: url("../img/raspberry_background.jpg");
+  background-image: url("../img/raspberry_background.png");
   width: 560px;
   min-height: 229px;
 }
 
 .offer-chocolate {
-  background-image: url("../img/chocolate_background.jpg");
+  background-image: url("../img/chocolate_background.png");
   width: 560px;
   min-height: 229px;
 }
@@ -284,6 +285,11 @@ body {
   font-size: 13px;
   line-height: 18px;
   text-decoration: underline;
+  width: 61%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 .about-us-list a {
@@ -364,6 +370,9 @@ body {
 
 .about-us-list li {
   list-style: none;
+  width: 50%;
+  white-space: nowrap;
+  padding-top: 5px;
 }
 
 .catalog {
@@ -599,8 +608,9 @@ body {
 }
 
 .page-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr min-content;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .breadcrumb-items {
@@ -628,6 +638,7 @@ body {
 
 .pages {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
 }
 
@@ -653,3 +664,41 @@ body {
   display: none;
 }
 
+.second-title-slide {
+  display: none;
+}
+
+.third-title-slide {
+  display: none;
+}
+
+.social-list li {
+  margin: 0;
+  padding: 0;
+}
+
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.social-link {
+  display: none;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-us-wrapper {
+  padding-left: 148px;
+}
+
+.logo-link {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-right: 27px;
+}
