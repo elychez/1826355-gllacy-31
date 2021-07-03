@@ -61,12 +61,12 @@
         </a>
         <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="username">
-            <label for="login-login">Логин</label>
-            <input id="login-login" type="email" name="login" placeholder="email@example.com">
+            <label class="visually-hidden" for="login-login">Логин</label>
+            <input class="login-input" id="login-login" type="email" name="login" placeholder="email@example.com">
           </p>
           <p class="password">
-            <label for="login-password">Пароль</label>
-            <input id="login-password" type="password" name="password" placeholder="••••••••">
+            <label class="visually-hidden" for="login-password">Пароль</label>
+            <input class="login-input" id="login-password" type="password" name="password" placeholder="••••••••">
           </p>
           <div>
           <button class="sign-in-button" type="submit">Войти</button>
@@ -161,80 +161,77 @@
   <section class="main-hits">
     <h2 class="visually-hidden">Хиты</h2>
   <ul class="item-preview-list">
-    <li class="item-preview">
-    <div class="item-preview-absolute">
+    <li class="item-preview custom-item-preview">
       <img src="img/orange_icecream.png" width="267" height="267" alt="Сливочное мороженое с апельсиноым джемом">
       <p class="price">
         <span class="price-value">440</span>
         <span class="ruble">₽</span>
         <span class="kg">/кг</span>
       </p>
+      <a href="#">
       <p class="icecream-description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-      <button class="fast-view buttons" type="button">Быстрый просмотр</button>
-    </div>
+      </a>
+      <button class="fast-view fast-view-index buttons" type="button">Быстрый просмотр</button>
     </li>
-    <li class="item-preview">
-      <div class="item-preview-absolute">
+    <li class="item-preview custom-item-preview">
       <img src="img/chocolate_icecream.png" width="267" height="267" alt="Сливочно-кофейное мороженое">
       <p class="price">
         <span class="price-value">380</span>
         <span class="ruble">₽</span>
         <span class="kg">/кг</span>
       </p>
+      <a href="#">
       <p class="icecream-description">Сливочно-кофейное с кусочками шоколада</p>
-      <button class="fast-view buttons" type="button">Быстрый просмотр</button>
-      </div>
+      </a>
+      <button class="fast-view fast-view-index buttons" type="button">Быстрый просмотр</button>
     </li>
-    <li class="item-preview">
-      <div class="item-preview-absolute">
+    <li class="item-preview custom-item-preview">
       <img src="img/strawberry_icecream.png" width="267" height="267" alt="Сливочно клубничное мороженое">
       <p class="price">
         <span class="price-value">335</span>
         <span class="ruble">₽</span>
         <span class="kg">/кг</span>
       </p>
+      <a href="#">
       <p class="icecream-description">Сливочно-клубничное с присыпкой из белого шоколада</p>
-      <button class="fast-view buttons" type="button">Быстрый просмотр</button>
-      </div>
+      </a>
+      <button class="fast-view fast-view-index buttons" type="button">Быстрый просмотр</button>
     </li>
-    <li class="item-preview">
-      <div class="item-preview-absolute">
+    <li class="item-preview custom-item-preview">
       <img src="img/creamy_icecream.png" width="267" height="267" alt="Мороженое сливочное крем-брюле">
       <p class="price">
         <span class="price-value">415</span>
         <span class="ruble">₽</span>
         <span class="kg">/кг</span>
       </p>
+      <a href="#">
       <p class="icecream-description">Сливочное крем-брюле с карамельной подливкой</p>
-      <button class="fast-view buttons" type="button">Быстрый просмотр</button>
-      </div>
+      </a>
+      <button class="fast-view fast-view-index buttons" type="button">Быстрый просмотр</button>
     </li>
   </ul>
   </section>
 
+  <div class="main-advantages-wrapper">
   <section class="main-advantages vaffel-advantage">
-    <div class="main-advantages-wrapper">
     <h2 class="advantages-description">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
     <ul class="advantages-list">
-      <li class="advantage-item">
-        <img src="img/icon_icecream.svg" width="16" height="32" alt="">
+      <li class="advantage-item icecream-icon">
         <p class="advantage-item-text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
       </li>
-      <li class="advantage-item">
-        <img src="img/icon_leaf.svg" width="16" height="27" alt="">
-        <p class="advantage-item-text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-      </li>
-      <li class="advantage-item">
-        <img src="img/icon_cow.svg" width="24" height="24" alt="">
+
+      <li class="advantage-item cow-icon">
         <p class="advantage-item-text">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
       </li>
-      <li class="advantage-item">
-        <img src="img/icon_thermo.svg" width="16" height="26" alt="">
+      <li class="advantage-item leaf-icon">
+        <p class="advantage-item-text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+      </li>
+      <li class="advantage-item thermo-icon">
         <p class="advantage-item-text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
       </li>
     </ul>
-    </div>
   </section>
+  </div>
 
 <div class="blog-email">
   <article class="blog blog-image">
