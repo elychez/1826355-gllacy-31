@@ -50,7 +50,6 @@
     <ul class="user-navigation">
       <li class="search">
         <a class="search-icon">
-        <img class="icon" src="img/icon_search.svg" width="16" height="16" alt="">
         </a>
         <form action="https://echo.htmlacademy.ru" method="get">
           <input class="search-input" type="search" placeholder="Что ищем?">
@@ -58,9 +57,8 @@
       </li>
       <li class="login">
         <a class="login-icon">
-        <img src="img/icon_login.svg" width="20" height="19" alt="">
+          <span>Вход</span>
         </a>
-        <a class="login-link" href="blank.html">Вход</a>
         <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="username">
             <label for="login-login">Логин</label>
@@ -85,8 +83,9 @@
         </form>
       </li>
       <li class="cart">
-        <img src="img/icon_cart.svg" width="21" height="20" alt="">
-    <a class="empty-cart" href="blank.html">Пусто</a>
+    <a class="empty-cart" href="blank.html">
+        <span>Пусто</span>
+    </a>
       </li>
     </ul>
 
@@ -135,9 +134,9 @@
           </li>
         </ul>
         <div class="slider-controls">
-          <button type="button" aria-label="Первый слайд"></button>
+          <button class="current" type="button" aria-label="Первый слайд"></button>
           <button type="button" aria-label="Второй слайд"></button>
-          <button class="current" type="button" aria-label="Третий слайд"></button>
+          <button type="button" aria-label="Третий слайд"></button>
         </div>
       </section>
     </div>
@@ -175,6 +174,7 @@
     </div>
     </li>
     <li class="item-preview">
+      <div class="item-preview-absolute">
       <img src="img/chocolate_icecream.png" width="267" height="267" alt="Сливочно-кофейное мороженое">
       <p class="price">
         <span class="price-value">380</span>
@@ -183,8 +183,10 @@
       </p>
       <p class="icecream-description">Сливочно-кофейное с кусочками шоколада</p>
       <button class="fast-view buttons" type="button">Быстрый просмотр</button>
+      </div>
     </li>
     <li class="item-preview">
+      <div class="item-preview-absolute">
       <img src="img/strawberry_icecream.png" width="267" height="267" alt="Сливочно клубничное мороженое">
       <p class="price">
         <span class="price-value">335</span>
@@ -193,8 +195,10 @@
       </p>
       <p class="icecream-description">Сливочно-клубничное с присыпкой из белого шоколада</p>
       <button class="fast-view buttons" type="button">Быстрый просмотр</button>
+      </div>
     </li>
     <li class="item-preview">
+      <div class="item-preview-absolute">
       <img src="img/creamy_icecream.png" width="267" height="267" alt="Мороженое сливочное крем-брюле">
       <p class="price">
         <span class="price-value">415</span>
@@ -203,6 +207,7 @@
       </p>
       <p class="icecream-description">Сливочное крем-брюле с карамельной подливкой</p>
       <button class="fast-view buttons" type="button">Быстрый просмотр</button>
+      </div>
     </li>
   </ul>
   </section>
