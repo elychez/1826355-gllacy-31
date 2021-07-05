@@ -23,7 +23,7 @@
     </a>
     <ul class="site-navigation">
       <li class="site-navigation-list catalog-menu">
-        <a class="catalog" href="catalog.html">Каталог</a>
+        <a class="catalog site-navigation-item" href="catalog.html">Каталог</a>
         <ul class="menu-list catalog-list">
           <li class="menu-list-item new">
             <a href="#">Новинки</a>
@@ -44,11 +44,11 @@
       </li>
 
       <li class="site-navigation-list">
-        <a href="blank.html">Доставка и оплата</a>
+        <a class="site-navigation-item" href="blank.html">Доставка и оплата</a>
       </li>
 
       <li class="site-navigation-list">
-        <a href="blank.html">О компании</a>
+        <a class="site-navigation-item" href="blank.html">О компании</a>
       </li>
     </ul>
       </div>
@@ -56,40 +56,42 @@
       <li class="search">
         <a class="search-icon">
         </a>
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <input class="search-input" type="search" placeholder="Что ищем?">
-        </form>
+        <div class="search-wrapper">
+          <form class="search-form"  action="https://echo.htmlacademy.ru" method="get">
+            <input class="login-input search-input" type="search" placeholder="Крем-брюле">
+          </form>
+        </div>
       </li>
 
       <li class="login">
         <a class="login-icon">
           <span>Вход</span>
         </a>
-          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-            <p class="username">
-          <label for="login-login">Логин</label>
-          <input id="login-login" type="email" name="login" placeholder="email@example.com">
-            </p>
-            <p class="password">
-          <label for="login-password">Пароль</label>
-          <input id="login-password" type="password" name="password" placeholder="••••••••">
-            </p>
-        <div>
-          <button class="sign-in-button" type="submit">Войти</button>
-          <ul class="login-list">
-            <li>
-              <a class="login-link" href="#">Забыли пароль?</a>
-            </li>
-            <li>
-              <a class="login-link" href="#">Новая регистрация</a>
-            </li>
-          </ul>
-        </div>
-          </form>
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="username">
+            <label class="visually-hidden" for="login-login">Логин</label>
+            <input class="login-input" id="login-login" type="email" name="login" placeholder="email@example.com">
+          </p>
+          <p class="password">
+            <label class="visually-hidden" for="login-password">Пароль</label>
+            <input class="login-input" id="login-password" type="password" name="password" placeholder="••••••••">
+          </p>
+          <div class="login-wrap">
+            <button class="sign-in-button buttons" type="submit">Войти</button>
+            <ul class="login-list">
+              <li>
+                <a class="login-link" href="#">Забыли пароль?</a>
+              </li>
+              <li>
+                <a class="login-link" href="#">Новая регистрация</a>
+              </li>
+            </ul>
+          </div>
+
+        </form>
       </li>
 
-      <li>
-
+      <li class="active-cart">
         <a class="cart-items" href="blank.html">
           <span class="cart-span">2 товара</span>
         </a>
