@@ -14,8 +14,8 @@
 </head>
 <body>
 
-<header class="main-header">
-  <div class="container">
+<header class="main-header container">
+  <div>
     <nav class="main-navigation">
       <div class="main-navigation-wrapper">
         <a href="index.html" class="main-header-logo">
@@ -58,7 +58,7 @@
         </a>
         <div class="search-wrapper">
           <form class="search-form"  action="https://echo.htmlacademy.ru" method="get">
-            <input class="login-input search-input" type="search" placeholder="Крем-брюле">
+            <input class="login-input search-input catalog-search" type="search" placeholder="Крем-брюле">
           </form>
         </div>
       </li>
@@ -140,20 +140,6 @@
     </ul>
   </nav>
 <div class="work-time-wrapper">
-    <div class="work-time">
-      <p class="work-time-text">
-        с 10 до 20, ежедневно
-      </p>
-      <div class="telephone-number">
-        <a class="telephone-number-link" href="tel:88124502525">8 812 450-25-25</a>
-      </div>
-    </div>
-</div>
-  </div>
-</header>
-
-<main class="container">
-
   <section class="breadcrumb">
     <h2 class="visually-hidden">breadcrumb</h2>
     <ul class="breadcrumb-items">
@@ -168,6 +154,21 @@
       </li>
     </ul>
   </section>
+    <div class="work-time">
+      <p class="work-time-text">
+        с 10 до 20, ежедневно
+      </p>
+      <div class="telephone-number">
+        <a class="telephone-number-link" href="tel:88124502525">8 812 450-25-25</a>
+      </div>
+    </div>
+
+</div>
+  </div>
+</header>
+
+<main class="container">
+
 
   <h1 class="icecream-main-title">Сливочное мороженое</h1>
 
@@ -178,7 +179,7 @@
         <div class="sorting-container">
           <div class="select-wrapper sort">
           <label class="sort-label sort-title" for="sorting">Сортировка:</label>
-            <div>
+            <div class="sort-by-wrapper">
           <select class="sort-by filter-background" name="sorting" id="sorting">
             <option value="popularity">по популярности</option>
             <option value="cheap-first">сначала недорогие</option>
@@ -187,12 +188,16 @@
           </select>
             </div>
           </div>
-          <div class="sort-by-price sort">
-          <label class="price-range sort-title" for="price-range">Цена: 100 ₽ – 500 ₽</label>
-          <div class="filter-background">
-          <input type="range" id="price-range" name="price-range">
-          </div>
-          </div>
+          <fieldset class="sort-by-price sort">
+            <legend class="price-range sort-title">Цена: 100 руб. – 500 руб.</legend>
+            <div class="price-field">
+              <div class="price-scale">
+                <div class="price-scale-chosen"></div>
+              </div>
+              <div class="price-toogle first-toogle" tabindex="0"></div>
+              <div class="price-toogle second-toogle" tabindex="0"></div>
+            </div>
+          </fieldset>
           <div class="sort-by-richness sort">
           <span class="richness-title sort-title">Жирность:</span>
             <ul class="filter-list filter-background radio-buttons">
@@ -255,7 +260,7 @@
         <div class="item-preview-absolute">
         <img src="img/orange_icecream.png" width="267" height="267" alt="Сливочное мороженое с апельсиноым джемом">
           <p class="price">
-            <span class="price-value">440</span>
+            <span class="price-value">310</span>
             <span class="ruble">₽</span>
             <span class="kg">/кг</span>
           </p>
@@ -454,24 +459,26 @@
 <footer class="footer-container container">
 
   <div class="page-footer">
+
     <ul class="social-list">
-      <li class="social-list-item">
-        <a class="social-link" href="#">Фейсбук</a>
-        <img src="img/logo_facebook.svg" width="32" height="32" alt="">
+      <li class="socials-list-item">
+        <a href="#" class="social-link social-link-fb" aria-label="Facebook">
+        </a>
       </li>
-      <li class="social-list-item">
-        <a class="social-link" href="#">Вконтакте</a>
-        <img src="img/logo_vk.svg" width="32" height="32" alt="">
+      <li class="socials-list-item">
+        <a href="#" class="social-link social-link-vk" aria-label="Vkontakte">
+        </a>
       </li>
-      <li class="social-list-item">
-        <a class="social-link" href="#">Инстаграм</a>
-        <img src="img/logo_ig.svg" width="32" height="32" alt="">
+      <li class="socials-list-item">
+        <a href="#" class="social-link social-link-insta" aria-label="Instagram">
+        </a>
       </li>
-      <li class="social-list-item">
-        <a class="social-link" href="#">Твиттер</a>
-        <img src="img/logo_twitter.svg" width="32" height="32" alt="">
+      <li class="socials-list-item">
+        <a href="#" class="social-link social-link-twitter" aria-label="Twitter">
+        </a>
       </li>
     </ul>
+
     <div class="about-us-wrapper">
       <ul class="about-us-list">
         <li class="about-us-item">
@@ -489,16 +496,18 @@
       </ul>
     </div>
     <div class="logo-link">
-      <a class="html-link" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo_htmlacademy.svg" width="108" height="31" alt="Лого htmlacademy">
-        <div>
+      <img src="img/logo_htmlacademy.svg" width="108" height="31" alt="Лого htmlacademy">
+      <div class="made">
         <span class="made-in">
         Сделано в
+          <a class="html-link" href="https://htmlacademy.ru/intensive/htmlcss">
           <span class="html">
             HTML Academy
-          </span>© 2021
+          </span>
+          </a>
+            © 2021
         </span>
-        </div>
-      </a>
+      </div>
     </div>
   </div>
 
