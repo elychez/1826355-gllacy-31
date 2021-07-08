@@ -707,13 +707,24 @@ margin-right: 22px;
 text-decoration: underline;
 }
 
-.breadcrumb-item-list:not(:last-child):after {
+.breadcrumb-arrows:after {
 background-image: url("../img/bread_arrows.svg");
 content: "";
 position: absolute;
 width: 6px;
 height: 6px;
 top: 42%;
+  left: 56%;
+}
+
+.breadcrumb-arrows:before {
+  background-image: url("../img/bread_arrows.svg");
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  top: 42%;
+  left: 25%;
 }
 
 .icecream-main-title {
@@ -722,6 +733,8 @@ font-size: 35px;
 line-height: 41px;
 margin: 0;
 padding: 0;
+  margin-top: -10px;
+  margin-bottom: 26px;
 }
 
 .sort-title {
@@ -763,7 +776,7 @@ font-weight: normal;
 font-size: 14px;
 line-height: 16px;
 color: var(--basic-black);
-padding: 9px 30px 7px 15px;
+  padding: 9px 54px 13px 15px;
 }
 
 .filter-list li {
@@ -797,7 +810,7 @@ box-sizing: border-box;
 .sort-by-wrapper {
 background-image: url("../img/arrow.svg");
 background-repeat: no-repeat;
-background-position: 145px 12px;
+  background-position: 171px 16px;
 }
 
 .page-body {
@@ -829,11 +842,17 @@ margin-right: -8px;
 margin-top: 17px;
 }
 
-.work-time-wrapper {
+.work-time-wrapper-catalog {
 display: flex;
   justify-content: space-between;
 margin-right: -2px;
 margin-top: -20px;
+}
+
+.work-time-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -21px;
 }
 
 .breadcrumb {
@@ -1148,6 +1167,7 @@ display: flex;
 position: relative;
 margin: 0;
 padding: 0;
+  margin-top: 6px;
 }
 
 .sorting-container {
@@ -1162,12 +1182,16 @@ align-items: center;
 }
 
 .sort {
-margin-right: 15px;
+  margin-right: -2px;
 border: 0;
 }
 
 .fill-wrapper {
 display: flex;
+}
+
+.sort-by-price {
+  padding-top: 10px;
 }
 
 .pages {
@@ -1775,6 +1799,10 @@ color: white;
 .radio-buttons li {
 padding: 9px 25px 0 25px;
 position: relative;
+}
+
+.radio-buttons li:last-child {
+  padding-right: 10px;
 }
 
 .radio-buttons input {
