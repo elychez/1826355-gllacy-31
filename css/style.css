@@ -247,11 +247,11 @@ body {
   text-underline-offset: 2px;
 }
 
-.item-preview a:hover, .about-us-item a:hover, .html-link:hover, .login-link:hover {
+.item-preview a:hover, .about-us-item a:hover, .html-link:hover {
   color: var(--link-preview);
 }
 
-.item-preview a:focus, .about-us-item a:focus, .html-link:focus, .login-link:focus {
+.item-preview a:focus, .about-us-item a:focus, .html-link:focus {
   color: var(--link-preview);
 }
 
@@ -2190,4 +2190,20 @@ body {
 .iframe-map {
   width: 100%;
   height: 430px;
+}
+
+.username {
+  width: 100%;
+}
+
+.password {
+  width: 100%;
+}
+
+.login-link:hover {
+  color: var(--pin-color);
+}
+
+.login-link:focus {
+  color: var(--pin-color);
 }
