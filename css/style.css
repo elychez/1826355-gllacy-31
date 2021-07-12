@@ -2213,3 +2213,10 @@ body {
   color: var(--pin-color);
 }
 
+.next-page-button:focus-within::after {
+  outline: black auto 1px;
+}
+
+.previous-page-button:focus-within::before {
+  outline: black auto 1px;
+}
