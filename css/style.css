@@ -215,6 +215,7 @@ body {
   width: 560px;
   min-height: 229px;
   background-size: cover;
+  background-color: var(--pin-color);
 }
 
 .offer-chocolate {
@@ -222,6 +223,7 @@ body {
   width: 560px;
   min-height: 229px;
   background-size: cover;
+  background-color: var(--basic-brown);
 }
 
 .icecream-price {
@@ -1050,8 +1052,8 @@ body {
 
 .login:hover .login-form {
   background: var(--basic-lighter);
-  -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 20px 20px var(--overlay-color);
+  box-shadow: 0 20px 20px var(--overlay-color);
   border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1456,10 +1458,8 @@ body {
   width: 8px;
   height: 12px;
   vertical-align: middle;
-  padding: 5px 0;
-  position: absolute;
-  left: 82%;
-  top: 98.5%;
+  padding-right: 20px;
+  padding-bottom: 18px;
 }
 
 .previous-page {
@@ -1474,8 +1474,8 @@ body {
 .active-cart:hover .cart-table-wrapper {
   display: block;
   background-color: var(--basic-lighter);
-  -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 20px 20px var(--overlay-color);
+  box-shadow: 0 20px 20px var(--overlay-color);
   border-radius: 4px;
   padding: 20px 11px 14px 21px;
   position: absolute;
@@ -1505,16 +1505,6 @@ body {
 .table-tr {
   position: relative;
   vertical-align: top;
-}
-
-.cart-table::after {
-  content: "";
-  background-image: url("../img/underline.png");
-  width: 510px;
-  height: 1px;
-  display: block;
-  position: absolute;
-  top: 56%;
 }
 
 .td-style {
@@ -1737,7 +1727,7 @@ body {
 }
 
 .site-wrapper-1 {
-  background-image: url("../img/icecream.png");
+  background-image: url("../img/icecream.png")
 }
 
 .site-wrapper-2 {
@@ -1780,6 +1770,7 @@ body {
   font-size: 60px;
   line-height: 60px;
   font-weight: 800;
+
 }
 
 .slider-controls {
@@ -1943,7 +1934,7 @@ body {
 }
 
 .made {
-  margin-top: 13px;
+  margin-top: 8px;
   font-size: 12px;
   line-height: 18px;
 }
@@ -2219,4 +2210,14 @@ body {
 
 .previous-page-button:focus-within::before {
   outline: black auto 1px;
+}
+
+.line {
+  width: 510px;
+  border: 0.2px solid #CACAC7;
+  margin: 0;
+}
+
+.td-last {
+  padding-bottom: 15px;
 }
