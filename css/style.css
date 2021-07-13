@@ -61,6 +61,7 @@
   --social-border: rgba(255, 255, 255, 0.288);
   --social-active-border: rgba(255, 255, 255, 0.9);
   --basic-toggle: #fff;
+  --line-color: #CACAC7;
 }
 
 html {
@@ -2214,7 +2215,7 @@ body {
 
 .line {
   width: 510px;
-  border: 0.2px solid #CACAC7;
+  border: 0.2px solid var(--line-color);
   margin: 0;
 }
 
