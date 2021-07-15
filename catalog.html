@@ -58,7 +58,8 @@
           </a>
           <div class="search-wrapper">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-              <input class="login-input search-input catalog-search" type="search" placeholder="Крем-брюле">
+              <label class="visually-hidden" for="search">Поиск</label>
+              <input class="login-input search-input catalog-search" id="search" type="search" placeholder="Крем-брюле">
             </form>
           </div>
         </li>
@@ -92,42 +93,42 @@
         </li>
 
         <li class="active-cart">
-          <a class="cart-items" href="blank.html">
+          <a class="cart-items" href="#">
             <span class="cart-span">2 товара</span>
           </a>
           <div class="cart-table-wrapper">
             <table class="cart-table">
               <tbody>
-              <tr class="table-tr">
-                <td class="td-style">
+              <tr class="table-row">
+                <td class="data-style">
                   <button type="button" class="delete-button">
                     <span class="visually-hidden">Удалить</span>
                   </button>
                 </td>
-                <td class="tb-img td-style">
+                <td class="table-img data-style">
                   <img src="img/orange_icecream.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
                 </td>
-                <td class="tb-product td-style">Пломбир с апельсиновым джемом</td>
-                <td class="tb-kg td-style">1,5 кг х
+                <td class="table-product data-style">Пломбир с апельсиновым джемом</td>
+                <td class="table-kg data-style">1,5 кг х
                   <span class="cart-item-price">200 руб.</span>
                 </td>
-                <td class="tb-price td-style">300 руб.</td>
+                <td class="table-price data-style">300 руб.</td>
               </tr>
-              <tr class="table-tr">
+              <tr class="table-row">
                 <td>
                   <button type="button" class="delete-button">
                     <span class="visually-hidden">Удалить</span>
                   </button>
                 </td>
-                <td class="tb-img td-style td-last">
+                <td class="table-img data-style table-last-img">
                   <img src="img/strawberry_icecream.png" width="33" height="33"
                        alt="Клубничный пломбир с присыпкой из белого шоколада">
                 </td>
-                <td class="tb-product td-style">Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td class="tb-kg td-style">1,5 кг х
+                <td class="table-product data-style">Клубничный пломбир с присыпкой из белого шоколада</td>
+                <td class="table-kg data-style">1,5 кг х
                   <span class="cart-item-price">300 руб.</span>
                 </td>
-                <td class="tb-price td-style">450 руб.</td>
+                <td class="table-price data-style">450 руб.</td>
               </tr>
               </tbody>
             </table>
@@ -196,10 +197,10 @@
               <div class="price-scale">
                 <div class="price-scale-chosen"></div>
               </div>
-              <div class="price-toogle first-toogle" tabindex="0"></div>
+              <div class="price-toggle first-toggle" tabindex="0"></div>
               <input class="visually-hidden" type="range" name="first-toggle" min="100" max="500"
                      aria-label="first-toggle">
-              <div class="price-toogle second-toogle" tabindex="0"></div>
+              <div class="price-toggle second-toggle" tabindex="0"></div>
               <input class="visually-hidden" type="range" name="second-toggle" min="100" max="500"
                      aria-label="second-toggle">
             </div>
@@ -270,9 +271,9 @@
             <span class="ruble">₽</span>
             <span class="kg">/кг</span>
           </p>
-          <a href="#">
-            <p class="icecream-description icecream-description-catalog">Сливочное с апельсиновым джемом и цитрусовой
-              стружкой</p>
+          <a class="icecream-description icecream-description-catalog" href="#">
+            Сливочное с апельсиновым джемом и цитрусовой
+            стружкой
           </a>
           <button class="fast-view buttons" type="button">Быстрый просмотр</button>
         </div>
@@ -285,8 +286,8 @@
             <span class="ruble">₽</span>
             <span class="kg">/кг</span>
           </p>
-          <a href="#">
-            <p class="icecream-description icecream-description-catalog">Сливочно-кофейное с кусочками шоколада</p>
+          <a class="icecream-description icecream-description-catalog" href="#">
+            Сливочно-кофейное с кусочками шоколада
           </a>
           <button class="fast-view buttons" type="button">Быстрый просмотр</button>
         </div>
@@ -299,9 +300,9 @@
             <span class="ruble">₽</span>
             <span class="kg">/кг</span>
           </p>
-          <a href="#">
-            <p class="icecream-description icecream-description-catalog">Сливочно-клубничное с присыпкой из белого
-              шоколада</p>
+          <a class="icecream-description icecream-description-catalog" href="#">
+            Сливочно-клубничное с присыпкой из белого
+            шоколада
           </a>
           <button class="fast-view buttons" type="button">Быстрый просмотр</button>
         </div>
@@ -314,9 +315,9 @@
             <span class="ruble">₽</span>
             <span class="kg">/кг</span>
           </p>
-          <a href="#">
-            <p class="icecream-description icecream-description-catalog">Сливочное крем-брюле с карамельной
-              подливкой</p>
+          <a class="icecream-description icecream-description-catalog" href="#">
+            Сливочное крем-брюле с карамельной
+            подливкой
           </a>
           <button class="fast-view buttons" type="button">Быстрый просмотр</button>
         </div>
@@ -329,8 +330,8 @@
             <span class="ruble">₽</span>
             <span class="kg">/кг</span>
           </p>
-          <a href="#">
-            <p class="icecream-description icecream-description-catalog">Сливочное с брусничным джемом</p>
+          <a class="icecream-description icecream-description-catalog" href="#">
+            Сливочное с брусничным джемом
           </a>
           <button class="fast-view buttons" type="button">Быстрый просмотр</button>
         </div>
@@ -344,9 +345,9 @@
             <span class="ruble">₽</span>
             <span class="kg">/кг</span>
           </p>
-          <a href="#">
-            <p class="icecream-description icecream-description-catalog">Сливочно-черничное с цельными ягодами
-              черники</p>
+          <a class="icecream-description icecream-description-catalog" href="#">
+            Сливочно-черничное с цельными ягодами
+            черники
           </a>
           <button class="fast-view buttons" type="button">Быстрый просмотр</button>
         </div>
@@ -359,8 +360,8 @@
             <span class="ruble">₽</span>
             <span class="kg">/кг</span>
           </p>
-          <a href="#">
-            <p class="icecream-description icecream-description-catalog">Сливочно-лимонное с карамельной присыпкой</p>
+          <a class="icecream-description icecream-description-catalog" href="#">
+            Сливочно-лимонное с карамельной присыпкой
           </a>
           <button class="fast-view buttons" type="button">Быстрый просмотр</button>
         </div>
@@ -373,8 +374,8 @@
             <span class="ruble">₽</span>
             <span class="kg">/кг</span>
           </p>
-          <a href="#">
-            <p class="icecream-description icecream-description-catalog">Сливочное с шоколадной стружкой</p>
+          <a class="icecream-description icecream-description-catalog" href="#">
+            Сливочное с шоколадной стружкой
           </a>
           <button class="fast-view buttons" type="button">Быстрый просмотр</button>
         </div>
@@ -387,8 +388,8 @@
             <span class="ruble">₽</span>
             <span class="kg">/кг</span>
           </p>
-          <a href="#">
-            <p class="icecream-description icecream-description-catalog">Сливочно-ванильное с кусочками шоколада</p>
+          <a class="icecream-description icecream-description-catalog" href="#">
+            Сливочно-ванильное с кусочками шоколада
           </a>
           <button class="fast-view buttons" type="button">Быстрый просмотр</button>
         </div>
@@ -401,8 +402,8 @@
             <span class="ruble">₽</span>
             <span class="kg">/кг</span>
           </p>
-          <a href="#">
-            <p class="icecream-description icecream-description-catalog">Сливочноe с ментоловым сиропом</p>
+          <a class="icecream-description icecream-description-catalog" href="#">
+            Сливочноe с ментоловым сиропом
           </a>
           <button class="fast-view buttons" type="button">Быстрый просмотр</button>
         </div>
@@ -416,8 +417,8 @@
             <span class="ruble">₽</span>
             <span class="kg">/кг</span>
           </p>
-          <a href="#">
-            <p class="icecream-description icecream-description-catalog">Сливочное с кусочками черного шоколада</p>
+          <a class="icecream-description icecream-description-catalog" href="#">
+            Сливочное с кусочками черного шоколада
           </a>
           <button class="fast-view buttons" type="button">Быстрый просмотр</button>
         </div>
@@ -430,8 +431,8 @@
             <span class="ruble">₽</span>
             <span class="kg">/кг</span>
           </p>
-          <a href="#">
-            <p class="icecream-description icecream-description-catalog">Сливочное с мятным сиропом</p>
+          <a class="icecream-description icecream-description-catalog" href="#">
+            Сливочное с мятным сиропом
           </a>
           <button class="fast-view buttons" type="button">Быстрый просмотр</button>
         </div>
@@ -526,6 +527,8 @@
   </div>
 
 </footer>
+
+<script src="js/script.min.js"></script>
 
 </body>
 </html>
