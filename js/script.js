@@ -112,8 +112,7 @@ if (modal) {
       modalForm.classList.remove("modal-error");
       modalForm.offsetWidth = modalForm.offsetWidth;
       modalForm.classList.add("modal-error");
-    }
-    else {
+    } else {
       localStorage.setItem("login", loginForm);
       localStorage.setItem("email", emailForm);
     }
