@@ -56,23 +56,6 @@ setListener(sliderThird, "click", function () {
   siteWrapper.className = "site-wrapper site-wrapper-3";
 });
 
-setListener(modalPopup, "click", function (evt) {
-  evt.preventDefault();
-
-  const loginForm = modal.querySelector(".login-input-form");
-  const emailForm = modal.querySelector(".email-form-input");
-  const areaForm = modal.querySelector(".feedback-area");
-
-  modal.classList.add("modal-visible");
-  modalForm.classList.add("feedback-modal-show");
-  if (storageNameForm || storageEmailForm) {
-    loginForm.value = storageNameForm;
-    emailForm.value = storageEmailForm;
-  } else {
-    areaForm.focus();
-  }
-});
-
 if (modal) {
   const modalClose = modal.querySelector(".modal-close");
   const username = modal.querySelector("[name=name-surname]");
@@ -87,6 +70,24 @@ if (modal) {
     isStorageSupport = false;
   }
 
+  setListener(modalPopup, "click", function (evt) {
+    evt.preventDefault();
+
+    const loginForm = modal.querySelector(".login-input-form");
+    const emailForm = modal.querySelector(".email-form-input");
+    const areaForm = modal.querySelector(".feedback-area");
+
+    modal.classList.add("modal-visible");
+    modalForm.classList.add("feedback-modal-show");
+    if (storageNameForm || storageEmailForm) {
+      loginForm.value = storageNameForm;
+      emailForm.value = storageEmailForm;
+      localStorage.setItem("login", loginForm.value);
+      localStorage.setItem("email", emailForm.value);
+    } else {
+      areaForm.focus();
+    }
+  });
 
   modalClose.addEventListener("click", function () {
     modal.classList.remove("modal-visible");
